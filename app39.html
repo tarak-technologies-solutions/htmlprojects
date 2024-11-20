@@ -1,0 +1,83 @@
+<html>
+    <head>
+	     <title>
+		        Switch Statement
+		 </title>
+		 <head>
+		       <style>
+			        body    {
+					              background-color : #90CAF9;
+								  align : center;
+					        }
+				    .switch {
+					              text-align : center;
+								  /*border : 1px solid black;*/
+								  width : 400;
+								  height : 400;
+								  margin : auto;
+								  /*margin-left : 30%;*/
+								  margin-top : 10%;
+								  /*margin-bottom : 30%*/
+								  background-color : white;
+								 /* box-shadow : 4px -4px #0D47A1;*/
+								  box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+                                 -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+                                 -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+                                 -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+								  
+					        }
+					div h2  {
+					              color : white;
+								  text-shadow : 3px 3px 3px #0D47A1;
+					        }
+                    div p   {
+					              color : blue;
+					        }	
+                    button  {
+					              
+					              height : 40px;
+								  background-color : #90CAF9;
+								  border = none;
+								  border-radius : 5px;
+								  color : white;
+					        }							
+			   </style>
+		 </head>
+	</head>
+	<body style = "center">
+	     <div class = "switch">
+	     <h2>Switch Statement!</h2>
+		 <p><b>What is the name of this day</b></p>
+		 <button type = "button" onclick = "dayFunction()">Day Name</button>
+		 <p id = "switchDemo"></p>
+		 <script>
+		       function dayFunction() {
+			       let day;
+			       switch(new Date().getDay()) {
+				       case 0 :
+					            day = "Sunday";
+								break;
+					   case	1 : 
+                                day = "Monday";
+                                break;
+                       case 2 :
+                                day = "Tuesday";
+                                break;
+                       case 3 :
+                                day = "Wednesday";
+                                break;
+                       case 4 :
+                                day = "Thursday";
+                                break;
+                       case 5 :
+                                day = "Friday";	
+                                break;
+                       case 6 :
+                                day = "Saturday"					   
+				   }
+				   document.getElementById("switchDemo").innerHTML = "Today Is " + day;
+			   }
+		 </script>
+		 </div>
+	<body>
+</html>

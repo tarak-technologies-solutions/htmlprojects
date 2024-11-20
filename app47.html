@@ -1,0 +1,19 @@
+<html>
+   <body align = "center">
+       <h2>JavaScript arrow fuction...!</h2>
+	   <lable>First Number</lable>
+	   <input id = "fname" type = "text"><br>
+	   <lable>Second Name</lable>
+	   <input id = "sname" type = "text"><br>
+	   <button id = "demo" type = "button" onclick = "addFunction()">Multiplication Numbers</button>
+	   <p id = "Mul"></p>
+	   <script>
+	        function addFunction() {
+			    let fname = Number(document.getElementById("fname").value);
+				let sname = Number(document.getElementById("sname").value);
+				let myFunction = (a,b) => a * b;
+				document.getElementById("Mul").innerHTML = myFunction(fname,sname);
+			}
+	   </script>
+   </body>
+</html>

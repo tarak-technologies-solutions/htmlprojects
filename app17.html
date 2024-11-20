@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Gradient Colors</title>
+<style>
+.gradial {
+            display:flex;
+            gap:15px;
+            margin:10px;
+        }
+#linear {
+            width:200;
+            height:200;
+            border:1px solid red;
+            background-image:linear-gradient(to right,red,green,blue);
+            border-radius:50%;
+        }
+#radial {
+            
+            width:200;
+            height:200;
+            border:1px solid red;
+            background-image:radial-gradient(red,green,blue);
+            border-radius:50%;
+        }
+#conic {
+            
+            width:200;
+            height:200;
+            border:1px solid red;
+            background-image:conic-gradient(red,green,blue);
+            border-radius:50%;
+        }
+#pie {
+            
+            width:200;
+            height:200;
+            border:1px solid red;
+            background-image:conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+            border-radius:50%;
+        }
+
+</style>
+</head>
+<body>
+<div class="gradial">
+<div id="linear"></div>
+<div id="radial"></div>
+<div id="conic"></div>
+<div id ="pie"></div>
+<div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+ <html>
+    <head>
+           <title>Image Gallary</title>
+           <style>
+                                  * {
+                                          box-sizing: border-box;
+                                    }
+                  div.gallary       {
+                                          margin:5px;
+                                          border:1px solid #ccc;
+                                          float: left;
+                                          width: 180px;
+                                          box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                          /*-webkit-box-reflect: below;
+                                          -webkit-box-reflect: 30px;*/
+                                          -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+                                
+                                    }
+                  div.gallary:hover {
+                                          border:1px solid #777;
+                                          transform:scaleX(-1);
+                                    }
+                  div.gallary img   {
+                                          border: 1px solid #ddd;
+                                          /*border-radius:50%;*/
+                                          width:100%;
+                                          height:auto;
+                                          opacity:5;
+                                          /*filter:blur(4px)*/
+                                          /*-webkit-box-reflect: below;*/
+										  aspect-ration : 3/2;
+										  object-fit:contain;
+                                    }
+                  div.desc          {
+                                          padding:15px;
+                                          text-align:center;
+                                          font-size:20px
+                                    }
+           </style>
+    </head>
+    <body style="gap:5px">
+           <div class="gallary">
+                 <img src="E:\HTML_Images\336BA4D1-3873-4D83-8C82-B03689BBA5F0.jpg" alt="honey" width="600" height="400">
+                 <div class="desc">Honey</div>
+           </div>
+           <div class="gallary">
+                 <img src="E:\HTML_Images\IMG_0377.JPG" alt="honey" width="600" height="400">
+                 <div class="desc">Tarak in Guntur</div>
+           </div>
+           <div class="gallary">
+                 <img src="E:\HTML_Images\IMG20221023111403.jpg" alt="honey" width="600" height="400">
+                 <div class="desc">Tarak in Goa</div>
+           </div>
+           <div class="gallary">
+                 <img src="E:\HTML_Images\IMG_1986.JPG" alt="honey" width="600" height="400">
+                 <div class="desc">Tarak with friends</div>
+           </div>
+    </body>
+</html>

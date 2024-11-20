@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Pagination</title>
+<style>
+    h2            {
+                     text-align:center;
+                     color:white;
+                     text-shadow:3px 3px 3px #99ccff;
+                     font-size:40px;
+					 font-family:cursive;
+                  }
+   .center        {
+                     text-align:center;
+                     position:absolute;
+                     bottom: 0;
+                     width: 100%;
+                     margin-bottom:3px;
+                  }
+
+  .pagination     {
+                     display:inline-block;
+                     
+                  }
+  .pagination a   {
+                     text-decoration:none;
+                     padding:8px 16px;
+                     color:black;
+                     float:left;
+                     transition: background-color .3s;
+                     border:1px solid #ddd;
+                     border-radius:5px;
+                     margin: 0 4px;
+                     box-shadow: 2px 2px 2px #80bfff;
+                     text-shadow:3px 3px 3px blue;
+                   }
+  .pagination a.active {
+                          background-color:#4CAF50;
+                          color:white;
+                          border-radius:5px;
+
+                     }
+  .pagination a:hover:not(.active) {
+                                      background-color:#80bfff;
+                                      border-radius:5px;
+                                 }
+</style>
+</head>
+<body>
+    <h2>Sample Pagination</h2>
+    <div class="center">
+       <div class="pagination">
+           <a href="#">&laquo</a>
+           <a href="#">1</a>
+           <a href="#">2</a>
+           <a href="#">3</a>
+           <a href="#">4</a>
+           <a href="#">5</a>
+           <a href="#">6</a>
+           <a href="#">&raquo</a>
+      </div>
+   </div>
+</body>
+</html>

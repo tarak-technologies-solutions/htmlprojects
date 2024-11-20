@@ -1,0 +1,31 @@
+<html>
+   <head>
+       <style>
+	       button {
+		              width : 20%;
+					  height : 30;
+					  background-color : #872b1b;
+					  color : white;
+					  font-size : 20;
+					  border-radius : 30px;
+					  box-shadow : 2px 2px 2px black;
+		          }
+		   body   {
+		              background-color : #00ffff;
+		          }		  
+	   </style>
+   </head>
+   <body align = "center">
+       <h2>Sorting an Array</h2>
+	   <p id = "sort"></p>
+	   <button onclick = "sortNams()">Sort</button>
+	   <script>
+	        let names = ["Tarak","Amar","Lally","Saroja"];
+			document.getElementById("sort").innerHTML = names;
+			function sortNams(){
+			    names.sort();
+				document.getElementById("sort").innerHTML = names;
+			}
+	   </script>
+   </body>
+</html>

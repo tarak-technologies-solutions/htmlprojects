@@ -1,0 +1,16 @@
+<html>
+     <body>
+	     <h2>JavaScript forEach method....!</h2>
+		 <p id = "demo"></p>
+		 <script>
+		      const numbers = [11,47,20,48,32,91,73];
+			  let txt = "";
+			  numbers.forEach(myFunction);
+			  document.getElementById("demo").innerHTML = txt;
+			  
+			  function myFunction(value,index,array) {
+			       txt += value + "<br>";
+			  }
+		 </script>
+	 </body>
+</html>

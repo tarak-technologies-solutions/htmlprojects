@@ -1,0 +1,21 @@
+<html>
+   <body align = "center">
+      <h1>JavaScript Arrays</h1>
+	  <h2>The push() method!</h2>
+	  <p id = "add"></p>
+	  <button onclick = "addFun()">add</button>
+	  <script>
+	  
+	      let fruits = ["Apple","Banana","Mango"];
+		  document.getElementById("add").innerHTML = fruits;
+		  
+		  function addFun(){
+		      
+			  fruits.push("Graps");
+			  document.getElementById("add").innerHTML = fruits;
+			  
+		  }
+	  
+	  </script>
+   </body>
+</html>

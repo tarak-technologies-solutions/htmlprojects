@@ -1,0 +1,45 @@
+<html>
+   <head>
+       <style>
+	       input  {
+		             height : 30px;
+		          }
+		   button {
+		             height : 30px;
+                     /*margin-left : 5px;*/
+                     background-color : #fc2c03;
+                     color : white;
+                     border-radius : 5px;
+					 /*font-size : 20;*/	
+					 box-shadow : 4px 4px 4px black;
+                     text-shadow : 4px 4px 4px black
+		          }
+		button:hover {
+		                 background-color : #363232;
+						 cursor : pointer;
+		             }
+        body         {
+		                 background-color : #d47b7b;
+		             }					 
+	   </style>
+   </head>
+   <body align = "center">
+       <h2>JavaScript Comparision..!</h2>
+	   <h3>Enter the age for checking....</h3>
+	   <input id = "inputAge" type = "text">
+	   <button type = "button" onclick = "myFunction()">Check Age</button>
+	   <p id = "demo"></p>
+	   <script>
+	      function myFunction() {
+		       let personAge;
+			   let voteAge = Number(document.getElementById("inputAge").value);
+			   if(isNaN(voteAge)) {
+			       voteAge = "Input is not a number.";
+			   }else {
+			       voteAge = (voteAge > 18) ? "Eligible" : "Not Eligible";
+			   }
+		       document.getElementById("demo").innerHTML = voteAge + " for vote."; 
+		  }
+	   </script>
+   </body>
+</html>

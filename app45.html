@@ -1,0 +1,31 @@
+<html>
+   <body align = "center">
+       <h2>Handle custom exception using <span class = "throw">throw</span> key word</h2>
+	   <p>Please enter the vakue in the given box</p>
+	   <input id = "input" type = "text">
+	   <button type = "button" onclick = "checkFunction()">Check</button>
+	   <p id = "demo"></p>
+	   <script>
+	       function checkFunction(){
+		        const message = document.getElementById("demo");
+				message.innerHTML = "";
+				let x = document.getElementById("input").value;
+				try{
+				    if(x.trim() == ""){
+					     throw "enpty";
+					}
+					if(isNaN(x)){
+					     throw "Not a number";
+					}
+					x = Number(x);
+					if(x > 10){
+					     throw "High Value";
+					}
+					if(x < 5) throw "Low Value";
+				}catch(err){
+				    message.innerHTML = "The input value is " + err;
+				}
+		   }
+	   </script>
+   </body>
+</html>

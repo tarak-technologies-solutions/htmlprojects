@@ -1,0 +1,35 @@
+<html>
+    <body align = "center">
+	
+		 <h2>DOM Introdution..!</h2>
+	       <!--
+		   <div id = "main">
+		        <p>Tarak Nadh</p>
+				<p>Amar Nadh</p>
+		   </div>
+		   <p id = "demo"></p>
+		   <script>
+		         const x = document.getElementById("main");
+				 const y = x.getElementsByTagName("p");
+				 document.getElementById("demo").innerHTML = "My name is : "+ y[1].innerHTML;
+		   </script>
+	
+	     <p class = "intro">My Name is Tarak Nadh Battula.</p>
+		 <p class = "intro">My Name is Amar Nadh Battula.</p>
+		 <p>Here we choose paragrap individually!</p>
+		 <p id = "demo"></p>
+		 <script>
+		      const x = document.getElementsByClassName("intro");
+			  document.getElementById("demo").innerHTML = "I choosen this name : "+x[1].innerHTML;
+		 </script>
+		 -->
+		 <h3>Here we will use queryElementsAll() method to perfomce operations...</h3>
+		 <p  class = "intro">Tarak Nadh Battula.</p>
+		 <p class = "intro">Amar Nadh Battula.</p>
+		 <p id = "demo"></p>
+		 <script>
+		        const x = document.querySelectorAll("p.intro");
+				document.getElementById("demo").innerHTML = "This is my name "+x[1].innerHTML;
+		 </script>
+	</body>
+</html>
